@@ -45,29 +45,6 @@ export class MarkdownTheme extends DefaultTheme {
     return urls;
   }
 
-  public static buildAnchors(reflection: DeclarationReflection, urls: UrlMapping[]): UrlMapping[] {
-    const mapping = DefaultTheme.getMapping(reflection);
-    if (mapping) {
-      const url = [mapping.directory, MarkdownTheme.getUrl(reflection) + '.md'].join('/');
-      urls.push(new UrlMapping(url, reflection, mapping.template));
-      reflection.url = url;
-      reflection.hasOwnDocument = true;
-      for (const key in reflection.children) {
-        if (reflection.children.hasOwnProperty(key)) {
-          const child = reflection.children[key];
-          if (mapping.isLeaf) {
-            DefaultTheme.applyAnchorUrl(child, reflection);
-          } else {
-            // MarkdownTheme.buildUrls(child, urls);
-          }
-        }
-      }
-    } else {
-      DefaultTheme.applyAnchorUrl(reflection, reflection.parent);
-    }
-    return urls;
-  }
-
   public static getUrl(reflection: Reflection, relative?: Reflection, separator: string = '.'): string {
 
     let url = reflection.getAlias();

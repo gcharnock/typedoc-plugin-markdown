@@ -1,90 +1,97 @@
-{{#unless model.hideBack}}[{{project.name}}](../index.md) {{#with model}}{{> breadcrumb}}{{/with}}{{/unless}}
-{{> header}}
-{{#if model.displayReadme }}
-{{{model.readme}}}
-{{/if}}
-{{#unless model.displayReadme}}
-# {{model.kindString }}: {{ displaySafeText model.name }}
-{{/unless}}
-{{#with model}}
-{{#unless displayIndexTitle}}
-{{#if isSinglePage}}
-{{ getBackLink this }}
-{{/if}}
+{{!-- {{ Header }} --}}
+{{~#unless model.hideBack}}
+{{#compact}}
+[{{project.name}}](../index.md) 
+{{#with model}}{{> breadcrumb}}{{/with}}
+{{/compact}}
 {{/unless}}
 
-{{#if hasComment}}
+{{> header}}
+{{~#if model.displayReadme }}
+{{{model.readme}}}
+{{~/if}}
+{{~#unless model.displayReadme}}
+# {{model.kindString }}: {{ displaySafeText model.name }}
+{{~/unless}}
+{{~#with model}}
+{{#unless displayIndexTitle}}
+{{~#if isSinglePage}}
+{{ getBackLink this }}
+{{~/if}}
+{{/unless}}
+
+{{~#if hasComment}}
 
 {{> comment}}
 
-{{/if}}
-{{/with}}
+{{~/if}}
+{{~/with}}
 
-{{#if model.typeParameters}}
+{{~#if model.typeParameters}}
   
  ## Type parameters
-{{#with model}}{{> typeParameters}}{{/with}}
-{{/if}}
+{{~#with model}}{{> typeParameters}}{{/with}}
+{{~/if}}
 
 {{#if model.typeHierarchy}}
 
 ## Hierarchy
-{{#with model.typeHierarchy}}{{> hierarchy}}{{/with}}
-{{/if}}
+{{~#with model.typeHierarchy}}{{> hierarchy}}{{/with}}
+{{~/if}}
 
-{{#if model.implementedTypes}}
+{{~#if model.implementedTypes}}
 
 ## Implements
-{{#each model.implementedTypes}}
+{{~#each model.implementedTypes}}
 * {{> type}}
-{{/each}}
+{{~/each}}
  
-{{/if}}
+{{~/if}}
 
-{{#if model.implementedBy}}
+{{~#if model.implementedBy}}
 
 ### Implemented by
  
-{{#each model.implementedBy}}
+{{~#each model.implementedBy}}
 * {{> type}}
-{{/each}}
+{{~/each}}
  
-{{/if}}
+{{~/if}}
 
 {{#if model.signatures}}
 
  ### Callable
-{{#with model}}{{> member.signatures}}{{/with}}
+{{~#with model}}{{> member.signatures}}{{/with}}
 
-{{/if}}
+{{~/if}}
 
-{{#if model.indexSignature}}
+{{~#if model.indexSignature}}
 
 ### Indexable
 
-[{{#each model.indexSignature.parameters}} {{name}}: {{#with type}}{{>type}}{{/with}}{{/each}}]: 
-{{#with model.indexSignature.type}}{{>type}}{{/with}}
-{{#with model.indexSignature}}
+[{{~#each model.indexSignature.parameters}} {{name}}: {{#with type}}{{>type}}{{/with}}{{/each}}]: 
+{{~#with model.indexSignature.type}}{{>type}}{{/with}}
+{{~#with model.indexSignature}}
 {{> comment}}
-{{/with}}
-{{#if model.indexSignature.type.declaration}}
-{{#with model.indexSignature.type.declaration}}
+{{~/with}}
+{{~#if model.indexSignature.type.declaration}}
+{{~#with model.indexSignature.type.declaration}}
 {{> parameter}}
-{{/with}}
-{{/if}}
-{{/if}}
+{{~/with}}
+{{~/if}}
+{{~/if}}
 
 
-{{#with model}}
+{{~#with model}}
 {{ compileConstructors this}}
-{{/with}}
+{{~/with}}
 
 
-{{#with model}}
+{{~#with model}}
 
 ## Index
 
 {{ compileIndex this }}
 
 {{ compileRootMembers this }}
-{{/with}}
+{{~/with}}

@@ -1,0 +1,150 @@
+{
+	"id": 0,
+	"name": "typedoc-plugin-markdown",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "\"basic-types\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/www/typedoc-plugin-markdown/samples/basic-types.ts",
+			"comment": {
+				"shortText": "For programs to be useful, we need to be able to work with some of the simplest units of data:\nnumbers, strings, structures, boolean values, and the like."
+			},
+			"children": [
+				{
+					"id": 3,
+					"name": "amount",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "This is a number type\n```\nlet decimal: number = 6;\n```"
+					},
+					"sources": [
+						{
+							"fileName": "basic-types.ts",
+							"line": 20,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "6"
+				},
+				{
+					"id": 4,
+					"name": "color",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "This is a string type\n```\nlet color: string = \"blue\";\n```"
+					},
+					"sources": [
+						{
+							"fileName": "basic-types.ts",
+							"line": 28,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"blue\""
+				},
+				{
+					"id": 2,
+					"name": "isDone",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "This is a boolean type\n```\nlet isDone: boolean = false;\n```"
+					},
+					"sources": [
+						{
+							"fileName": "basic-types.ts",
+							"line": 12,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 5,
+					"name": "numbers",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "This is an array type\n```\nlet numbers: number[] = [1, 2, 3];\n```"
+					},
+					"sources": [
+						{
+							"fileName": "basic-types.ts",
+							"line": 36,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "number"
+						}
+					},
+					"defaultValue": " [1, 2, 3]"
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						3,
+						4,
+						2,
+						5
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "basic-types.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "External modules",
+			"kind": 1,
+			"children": [
+				1
+			]
+		}
+	]
+}

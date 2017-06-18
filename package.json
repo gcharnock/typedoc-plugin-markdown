@@ -12,7 +12,7 @@
     "lint": "tslint --type-check --project tsconfig.json",
     "prepare": "tsc && npm run copy:hbs",
     "prepublishOnly": "rm -rf dist && npm run prepare",
-    "samples": "typedoc --theme markdown --readme none --tsconfig samples/tsconfig.json --out samples/compiled",
+    "samples": "typedoc --theme markdown --readme none --tsconfig samples/tsconfig.json --out samples/compiled --json tests/samples.json",
     "pretest": "npm run prepare && npm run copy:pkg && npm run samples",
     "test": "mocha -r ts-node/register tests/tests.js",
     "watch": "concurrently \"npm run watch:tsc\" \"npm run watch:hbs\"",

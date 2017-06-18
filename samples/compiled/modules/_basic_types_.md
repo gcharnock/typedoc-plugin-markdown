@@ -28,7 +28,8 @@ This is a number type
 let decimal: number = 6;
 ```
 
-* Defined in basic-types.ts:20
+* Defined in [basic-types.ts:20](https://github.com/tgreyuk/typedoc-plugin-markdown/blob/280830a/samples/basic-types.ts#L20)
+
 <a id="color"></a>
 
 ###  color
@@ -39,7 +40,8 @@ This is a string type
 let color: string = "blue";
 ```
 
-* Defined in basic-types.ts:28
+* Defined in [basic-types.ts:28](https://github.com/tgreyuk/typedoc-plugin-markdown/blob/280830a/samples/basic-types.ts#L28)
+
 <a id="isdone"></a>
 
 ###  isDone
@@ -50,7 +52,8 @@ This is a boolean type
 let isDone: boolean = false;
 ```
 
-* Defined in basic-types.ts:12
+* Defined in [basic-types.ts:12](https://github.com/tgreyuk/typedoc-plugin-markdown/blob/280830a/samples/basic-types.ts#L12)
+
 <a id="numbers"></a>
 
 ###  numbers
@@ -61,5 +64,6 @@ This is an array type
 let numbers: number[] = [1, 2, 3];
 ```
 
-* Defined in basic-types.ts:36
+* Defined in [basic-types.ts:36](https://github.com/tgreyuk/typedoc-plugin-markdown/blob/280830a/samples/basic-types.ts#L36)
+
 

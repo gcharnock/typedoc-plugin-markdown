@@ -1,15 +1,9 @@
- 
 **{{ name }}**: {{#if isOptional}}?{{/if}} *{{#with type}}{{>type}}{{/with}}* {{#if defaultValue}} = {{ displaySafeText defaultValue}}{{/if}}
-
 {{> comment}}
-
-{{#if type.declaration}}
+{{~#if type.declaration~}}
 #### Type declaration
-
-{{#with type.declaration}}
+{{~#with type.declaration~}}
 {{> parameter}}
-{{/with}}
-
-{{/if}}
-
+{{~/with~}}
+{{~/if~}}
 {{compileSources this}}

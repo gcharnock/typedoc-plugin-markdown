@@ -5,6 +5,7 @@
 /tmp
 /samples/out/*.json
 /samples/html
+/tests/compiled
 
 # dependencies
 /node_modules

@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "/www/typedoc-plugin-markdown/samples/basic-types.ts",
+			"originalName": "/Projects/typedoc-plugin-markdown/samples/basic-types.ts",
 			"comment": {
 				"shortText": "For programs to be useful, we need to be able to work with some of the simplest units of data:\nnumbers, strings, structures, boolean values, and the like."
 			},
@@ -32,7 +32,7 @@
 						{
 							"fileName": "basic-types.ts",
 							"line": 20,
-							"character": 17
+							"character": 19
 						}
 					],
 					"type": {
@@ -56,7 +56,7 @@
 						{
 							"fileName": "basic-types.ts",
 							"line": 28,
-							"character": 16
+							"character": 18
 						}
 					],
 					"type": {
@@ -80,7 +80,7 @@
 						{
 							"fileName": "basic-types.ts",
 							"line": 12,
-							"character": 17
+							"character": 19
 						}
 					],
 					"type": {
@@ -104,7 +104,7 @@
 						{
 							"fileName": "basic-types.ts",
 							"line": 36,
-							"character": 18
+							"character": 20
 						}
 					],
 					"type": {
@@ -136,6 +136,758 @@
 					"character": 0
 				}
 			]
+		},
+		{
+			"id": 6,
+			"name": "\"classes/basic-class\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/Projects/typedoc-plugin-markdown/samples/classes/basic-class.ts",
+			"children": [
+				{
+					"id": 7,
+					"name": "Greeter",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Let’s take a look at a simple class-based example:"
+					},
+					"children": [
+						{
+							"id": 9,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Document a constructor"
+							},
+							"signatures": [
+								{
+									"id": 10,
+									"name": "new Greeter",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Document a constructor"
+									},
+									"parameters": [
+										{
+											"id": 11,
+											"name": "message",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "Message passed in\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Greeter",
+										"id": 7
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/basic-class.ts",
+									"line": 8,
+									"character": 29
+								}
+							]
+						},
+						{
+							"id": 8,
+							"name": "greeting",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "A private property"
+							},
+							"sources": [
+								{
+									"fileName": "classes/basic-class.ts",
+									"line": 8,
+									"character": 20
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 12,
+							"name": "greet",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 13,
+									"name": "greet",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "A public method"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/basic-class.ts",
+									"line": 21,
+									"character": 16
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								9
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								8
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								12
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "classes/basic-class.ts",
+							"line": 4,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 14,
+					"name": "greeter",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "A new instance of our class"
+					},
+					"sources": [
+						{
+							"fileName": "classes/basic-class.ts",
+							"line": 29,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Greeter",
+						"id": 7
+					},
+					"defaultValue": " new Greeter('world')"
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						7
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						14
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "classes/basic-class.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "\"classes/inheritance\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/Projects/typedoc-plugin-markdown/samples/classes/inheritance.ts",
+			"children": [
+				{
+					"id": 16,
+					"name": "Animal",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 18,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 19,
+									"name": "new Animal",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 20,
+											"name": "theName",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Animal",
+										"id": 16
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 2,
+									"character": 25
+								}
+							]
+						},
+						{
+							"id": 17,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 2,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 21,
+							"name": "move",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 22,
+									"name": "move",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 23,
+											"name": "distanceInMeters",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "0"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 4,
+									"character": 15
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								18
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								17
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								21
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "classes/inheritance.ts",
+							"line": 1,
+							"character": 19
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "Snake",
+							"id": 24
+						},
+						{
+							"type": "reference",
+							"name": "Horse",
+							"id": 31
+						}
+					]
+				},
+				{
+					"id": 31,
+					"name": "Horse",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 32,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 33,
+									"name": "new Horse",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 34,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Horse",
+										"id": 31
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Animal.__constructor",
+										"id": 18
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 17,
+									"character": 35
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Animal.__constructor",
+								"id": 18
+							}
+						},
+						{
+							"id": 35,
+							"name": "move",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 36,
+									"name": "move",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 37,
+											"name": "distanceInMeters",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "45"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Animal.move",
+										"id": 21
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 19,
+									"character": 15
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Animal.move",
+								"id": 21
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								32
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								35
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "classes/inheritance.ts",
+							"line": 17,
+							"character": 18
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Animal",
+							"id": 16
+						}
+					]
+				},
+				{
+					"id": 24,
+					"name": "Snake",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 25,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 26,
+									"name": "new Snake",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 27,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Snake",
+										"id": 24
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Animal.__constructor",
+										"id": 18
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 9,
+									"character": 35
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Animal.__constructor",
+								"id": 18
+							}
+						},
+						{
+							"id": 28,
+							"name": "move",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 29,
+									"name": "move",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 30,
+											"name": "distanceInMeters",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "5"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "Animal.move",
+										"id": 21
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "classes/inheritance.ts",
+									"line": 11,
+									"character": 15
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "Animal.move",
+								"id": 21
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								25
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								28
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "classes/inheritance.ts",
+							"line": 9,
+							"character": 18
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "Animal",
+							"id": 16
+						}
+					]
+				},
+				{
+					"id": 38,
+					"name": "sam",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "classes/inheritance.ts",
+							"line": 25,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Snake",
+						"id": 24
+					},
+					"defaultValue": " new Snake('Sammy the Python')"
+				},
+				{
+					"id": 39,
+					"name": "tom",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "classes/inheritance.ts",
+							"line": 26,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Animal",
+						"id": 16
+					},
+					"defaultValue": " new Horse('Tommy the Palomino')"
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						16,
+						31,
+						24
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						38,
+						39
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "classes/inheritance.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
 		}
 	],
 	"groups": [
@@ -143,7 +895,9 @@
 			"title": "External modules",
 			"kind": 1,
 			"children": [
-				1
+				1,
+				6,
+				15
 			]
 		}
 	]

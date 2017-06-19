@@ -3,8 +3,9 @@ import { compileTemplate } from '../utils';
 
 export function compileGroup(group: ReflectionGroup) {
   let md: hbs.SafeString = '';
-  if (group.title !== 'Constructors') {
-    switch (group.title) {
+  if (!group.cssClasses.includes('tsd-is-private')) {
+  // if (group.title !== 'Constructors') {
+  switch (group.title) {
       case 'Properties':
       md = compileTemplate(`partials/members.group.properties.hbs`, group);
       break;

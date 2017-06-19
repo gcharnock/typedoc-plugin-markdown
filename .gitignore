@@ -4,7 +4,8 @@
 /dist
 /tmp
 /samples/out/*.json
-/samples/html
+/samples/compiledHtml
+/samples/compiled
 /tests/compiled
 
 # dependencies

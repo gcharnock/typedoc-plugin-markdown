@@ -11,15 +11,15 @@ Overrides {{#with overwrites}}{{> typeAndParent}}{{/with}}
 {{~#each sources~}}
 {{~#if @root.isBitbucket}}
 {{~#if @root.sourceRoot}}
-* Defined in [{{fileName}}:{{line}}]({{@root.sourceRoot}}{{fileName}}?fileviewer=file-view-default#{{fileName}}-{{line}})
+*Defined in [{{fileName}}:{{line}}]({{@root.sourceRoot}}{{fileName}}?fileviewer=file-view-default#{{fileName}}-{{line}})*
 {{~else~}}
-* Defined in {{fileName}}:{{line}}
+*Defined in {{fileName}}:{{line}}*
 {{~/if~}}
 {{~else~}}
 {{~#if url~}}
-* Defined in [{{fileName}}:{{line}}]({{url}})
+*Defined in [{{fileName}}:{{line}}]({{url}})*
 {{else}}
-* Defined in {{fileName}}:{{line}}
+*Defined in {{fileName}}:{{line}}*
 {{~/if~}}
 {{~/if~}}
 {{~/each~}}

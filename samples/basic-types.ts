@@ -9,7 +9,7 @@
  * let isDone: boolean = false;
  * ```
  */
-export let isDone: boolean = false;
+export const isDone: boolean = false;
 
 /**
  * This is a number type
@@ -17,7 +17,7 @@ export let isDone: boolean = false;
  * let decimal: number = 6;
  * ```
  */
-export let amount: number = 6;
+export const amount: number = 6;
 
 /**
  * This is a string type
@@ -25,7 +25,7 @@ export let amount: number = 6;
  * let color: string = "blue";
  * ```
  */
-export let color: string = 'blue';
+export const color: string = 'blue';
 
 /**
  * This is an array type
@@ -33,4 +33,4 @@ export let color: string = 'blue';
  * let numbers: number[] = [1, 2, 3];
  * ```
  */
-export let numbers: number[] = [1, 2, 3];
+export const numbers: number[] = [1, 2, 3];

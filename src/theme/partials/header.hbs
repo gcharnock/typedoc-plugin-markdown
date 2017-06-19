@@ -1,11 +1,5 @@
 {{!-- {{ breadcrumbs }} --}}
-{{#unless model.hideBack}}
-{{#compact}}
-[{{project.name}}](../index.md) 
-{{~#with model~}}{{> breadcrumb}}{{/with}}
-{{/compact}}
-{{newLine}}
-{{/unless}}
+{{#unless model.hideBack}}[{{project.name}}](../index.md){{~#with model~}}{{> breadcrumb}}{{/with}}{{newLine}}{{/unless}}
 {{!-- {{ readme }} --}}
 {{~#if model.displayReadme ~}}
 {{{model.readme}}}
